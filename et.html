@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Premium Expense Tracker</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="background-circle circle1"></div>
+    <div class="background-circle circle2"></div>
+
+    <main class="container">
+      <section class="card">
+        <header class="header">
+          <h1>💰 Expense Tracker</h1>
+
+          <p>Track your daily expenses with a beautiful modern interface.</p>
+        </header>
+
+        <!-- FORM -->
+
+        <div class="form-grid">
+          <div class="input-group">
+            <label for="n"> Expense Name </label>
+
+            <input type="text" id="n" placeholder="Enter expense name" />
+          </div>
+
+          <div class="input-group">
+            <label for="a"> Amount </label>
+
+            <input type="number" id="a" placeholder="Enter amount" />
+          </div>
+
+          <div class="input-group">
+            <label for="c"> Category </label>
+
+            <select id="c">
+              <option>Food</option>
+
+              <option>Shopping</option>
+
+              <option>Bills</option>
+
+              <option>Travel</option>
+
+              <option>Others</option>
+            </select>
+          </div>
+
+
+          
+          <div class="input-group">
+            <label for="d"> Date </label>
+
+            <input type="date" id="d" />
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+
+        <div class="button-area">
+          <button id="ae">
+            <span>Add Expense</span>
+          </button>
+        </div>
+
+        <!-- TOTAL CARD -->
+
+        <div class="summary">
+          <div class="summary-card">
+            <h2>Total Expense</h2>
+
+            <h3>
+              ₹
+              <span id="te">0</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- TABLE -->
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Amount</th>
+
+                <th>Category</th>
+
+                <th>Date</th>
+
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody id="tb"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
